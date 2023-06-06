@@ -46,7 +46,7 @@ rm \${chr}/\${chr}_\${end}/\${chr}_\${end}.min4.phy
 
 module load RAxML-NG/1.0.2-gompi-2020b
 
-raxml-ng-mpi -all --msa \${chr}/\${chr}_\${end}/\${chr}_\${end}.final.phy --model GTR+G --bs-tree 100 --outgroup AN020050 -prefix \${chr}/\${chr}_\${end}/\${chr}_\${end} --threads 24 --workers 4 --extra thread-nopin --force perf_threads
+raxml-ng-mpi -all --msa \${chr}/\${chr}_\${end}/\${chr}_\${end}.final.phy --model GTR+G --bs-tree 100 --outgroup $outgroup -prefix \${chr}/\${chr}_\${end}/\${chr}_\${end} --threads 24 --workers 4 --extra thread-nopin --force perf_threads
 
 
 ### Calculating D-statistic values using Dsuite Dtrios for the locus 
