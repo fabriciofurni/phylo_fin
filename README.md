@@ -2,7 +2,7 @@
 
 </div>
 
-## Scripts used on Furni et. al. 2023. Pervasive, genome-wide phylogeographic disruptions among fin whale (_Balaenoptera physalus_) subspecies
+## Scripts used on Furni et. al. (2023). Pervasive, genome-wide phylogeographic disruptions among fin whale (_Balaenoptera physalus_) subspecies
 
 
 ## Alignment and Variant Calling 
