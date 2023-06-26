@@ -28,7 +28,7 @@ mkdir \${chr}/\${chr}_\${end}
 
 module load BCFtools
 
-bcftools view -Oz phylogeny_auto_filt_snps.vcf.gz -r \${chr}:\${sta}-\${end}  > \${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf.gz
+bcftools view -Oz ${outputfolder}/vcfs/${proj}_snps_auto_filtered.vcf.gz -r \${chr}:\${sta}-\${end}  > \${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf.gz
 
 
 ## Converting from vcf to phylip with vcf2phylip
