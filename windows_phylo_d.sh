@@ -51,6 +51,8 @@ iqtree2 -s ${chr}_${end}.min4.phy -m GTR+G -nt 14 -B 1000 -quiet -o ${output}
 
 Dsuite Dtrios -k 100 ${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf ${chr}/\${chr}_\${end}/sample_pop.txt
 
+EOF
+
 done
 
-EOF
+
