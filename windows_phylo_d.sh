@@ -34,7 +34,7 @@ bcftools view -Oz ${outputfolder}/vcfs/${proj}_snps_auto_filtered.vcf.gz -r \${c
 ## Converting from vcf to phylip with vcf2phylip
 
 
-/data/p290631/softwares/vcf2phylip.py -i \${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf.gz --output-prefix \${chr}_\${end} --output-folder \${chr}/\${chr}_\${end}/
+vcf2phylip.py -i \${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf.gz --output-prefix \${chr}_\${end} --output-folder \${chr}/\${chr}_\${end}/
 
 cat \${chr}/\${chr}_\${end}/\${chr}_\${end}.min4.phy | sed 's/\*/-/g' > \${chr}/\${chr}_\${end}/\${chr}_\${end}.final.phy
 
@@ -43,15 +43,13 @@ rm \${chr}/\${chr}_\${end}/\${chr}_\${end}.min4.phy
 
 ### Running phylogenetic estimates with RaxML
 
+module load IQ-TREE/2.2.2.3-gompi-2022a
 
-module load RAxML-NG/1.0.2-gompi-2020b
-
-raxml-ng-mpi -all --msa \${chr}/\${chr}_\${end}/\${chr}_\${end}.final.phy --model GTR+G --bs-tree 100 --outgroup $outgroup -prefix \${chr}/\${chr}_\${end}/\${chr}_\${end} --threads 24 --workers 4 --extra thread-nopin --force perf_threads
-
+iqtree2 -s ${chr}_${end}.min4.phy -m GTR+G -nt 14 -B 1000 -quiet -o ${output}
 
 ### Calculating D-statistic values using Dsuite Dtrios for the locus 
 
-/data/p290631/softwares/Dsuite/Build/Dsuite Dtrios -k 100 ${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf ${chr}/\${chr}_\${end}/sample_pop.txt
+Dsuite Dtrios -k 100 ${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf ${chr}/\${chr}_\${end}/sample_pop.txt
 
 done
 
