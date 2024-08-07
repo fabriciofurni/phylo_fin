@@ -68,17 +68,17 @@ Script to obtain mitochondrial sequences and run alignment with MAFFT. Code for 
 
 - Get mitochondrial sequences from BAM files using ANGSD
 - Align sequences with MAFFFT
-- Run RAXML phylogenetic estimates 
+- Run IQtree phylogenetic estimates 
 
 
 ## Script 4 
 
-Script for analyses in 1mbp genomic windows.
+Script for analyses in genomic windows.
 
 - Create input files from the whole autosomal data based on chromosome coordinates
 - Run conversion from vcf to phyllip
-- Run RAXML phylogenetic estimates
-- Run Dsuite Dtrio estimates
+- Run IQtree phylogenetic estimates
+- Run Dsuite estimates
 
 ## Script 5
 
