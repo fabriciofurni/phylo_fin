@@ -7,7 +7,7 @@ module load angsd/0.940-GCC-11.2.0
 for sample in $(cat sampleinfo | sort | uniq)
 do
 
-angsd -doCounts 1 -doFasta 2 -out ${outputfolder}/mitochondrial/${sample} -i /scratch/$USER/genome/${sample}/${sample}_dedup_reads.bam -r NC_001601.1:
+angsd -doCounts 1 -doFasta 2 -out ${outputfolder}/mitochondrial/${sample} -i /scratch/$USER/genome/${sample}/${sample}_dedup_reads.bam -r CM018075.1:
 
 ## Aligning with MAFFT 
 
