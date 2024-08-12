@@ -81,13 +81,12 @@ Script for analyses in genomic windows.
 - Run IQtree phylogenetic estimates
 - Run Dsuite estimates
 
-#### [filtering_snps.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/filtering_snps.sh) <a name="filtering_snps"></a>
+#### [astral_gcf.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/astral_gcf.sh) <a name="astral_gcf"></a>
 
-Script to run ASTRAL, TWISST, and GCF distance checks 
+Script to run ASTRAL and GCF distance checks per windows
 
 - Run Astral per window
 - Run GCF distant per window
-- Run Twisst for 100k 
   
 
 
