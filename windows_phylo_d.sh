@@ -41,7 +41,7 @@ cat \${chr}/\${chr}_\${end}/\${chr}_\${end}.min4.phy | sed 's/\*/-/g' > \${chr}/
 rm \${chr}/\${chr}_\${end}/\${chr}_\${end}.min4.phy
 
 
-### Running phylogenetic estimates with RaxML
+### Running phylogenetic estimates with IQTree
 
 module load IQ-TREE/2.2.2.3-gompi-2022a
 
