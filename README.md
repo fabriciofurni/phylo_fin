@@ -56,15 +56,15 @@ Script to create the final SNP dataset. The script does joint-genotyping samples
 
 #### Script 2
 
-Script to run whole autosomal, sex-chromosome phylogenetic estimates 
+Script to run concatenated autosomal, sex-chromosome phylogenetic estimates 
 
-- Converting files from VCF to Phyllip using . 
-- Run phylogenies using RAXML
+- Converting files from VCF to Phyllip. 
+- Run phylogenies
   
 
 #### Script 3 
 
-Script to obtain mitochondrial sequences and run alignment with MAFFT. Code for run in RAXML after manual curation. 
+Script to obtain mitochondrial sequences and run alignment with MAFFT. Code for run in IQTree after manual curation. 
 
 - Get mitochondrial sequences from BAM files using ANGSD
 - Align sequences with MAFFFT
@@ -82,13 +82,8 @@ Script for analyses in genomic windows.
 
 ## Script 5
 
-Script to test for phylogeographical structure based on monophyly and RF distances.
+Script to run ASTRAL and GCF distance checks 
 
-- Load libraries
-- Input phylogeny results from the windows
-- Test for monophyly using ape
-- Collecting results
-- Test RF distance for both mitochondrial and nuclear topologies
 
   
 
