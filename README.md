@@ -5,7 +5,8 @@
 ## Scripts used on Furni et. al. (2024). Phylogenomics and pervasive genome-wide phylogenetic discordance among fin whales (_Balaenoptera physalus_)   
 
 
-## Alignment and Variant Calling 
+## [processing.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/alignment_calling.sh) <a name="processing"></a>
+
 
 #### Raw reads alignment steps 
 
@@ -42,7 +43,7 @@
 
 ## Downstream analyses 
 
-#### Script 1
+#### [processing.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/filtering_snps.sh) <a name="processing"></a>
 
 Script to create the final SNP dataset. The script does joint-genotyping samples and filters by quality, number of alleles, and others
 
