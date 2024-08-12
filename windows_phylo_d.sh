@@ -51,6 +51,18 @@ iqtree2 -s ${chr}_${end}.min4.phy -m GTR+G -nt 14 -B 1000 -quiet -o ${output}
 
 Dsuite Dtrios -k 100 ${chr}/\${chr}_\${end}/\${chr}_\${end}.vcf ${chr}/\${chr}_\${end}/sample_pop.txt
 
+
+### Collecting results 
+
+dresuls=$(cat ${chr}_${end}.min4.phy_tree.txt | grep -v 'P1' | cut -f4,5,6,7,8,9,10)
+
+echo " $(cat ${chr}_${end}.min4.phy.contree) ${chr} ${sta} ${end} ${dresuls}" >> ${chr}_Consensus_BT_trees
+
+rm *${chr}_${end}.min4.phy*
+
+rm ${chr}_${end}.vcf.gz
+
+
 EOF
 
 done
