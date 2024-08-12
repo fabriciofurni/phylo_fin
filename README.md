@@ -71,7 +71,7 @@ Script to obtain mitochondrial sequences and run alignment with MAFFT. Code for 
 - Run IQtree phylogenetic estimates 
 
 
-## Script 4 
+#### Script 4 
 
 Script for analyses in genomic windows.
 
@@ -80,7 +80,7 @@ Script for analyses in genomic windows.
 - Run IQtree phylogenetic estimates
 - Run Dsuite estimates
 
-## Script 5
+#### Script 5
 
 Script to run ASTRAL, TWISST, and GCF distance checks 
 
