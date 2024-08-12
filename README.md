@@ -5,7 +5,7 @@
 ## Scripts used on Furni et. al. (2024). Phylogenomics and pervasive genome-wide phylogenetic discordance among fin whales (_Balaenoptera physalus_)   
 
 
-## [processing.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/alignment_calling.sh) <a name="processing"></a>
+## [alignment_calling.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/alignment_calling.sh) <a name="alignment_calling"></a>
 
 
 #### Raw reads alignment steps 
@@ -43,7 +43,7 @@
 
 ## Downstream analyses 
 
-#### [processing.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/filtering_snps.sh) <a name="processing"></a>
+#### [filtering_snps.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/filtering_snps.sh) <a name="filtering_snps"></a>
 
 Script to create the final SNP dataset. The script does joint-genotyping samples and filters by quality, number of alleles, and others
 
@@ -55,7 +55,7 @@ Script to create the final SNP dataset. The script does joint-genotyping samples
 - Filter SNPs only for the autosomal, and sex-chromosomes genomes
 
 
-#### Script 2
+#### [concat.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/concatenated.sh) <a name="concatenated"></a>
 
 Script to run concatenated autosomal, sex-chromosome phylogenetic estimates 
 
@@ -63,7 +63,7 @@ Script to run concatenated autosomal, sex-chromosome phylogenetic estimates
 - Run phylogenies
   
 
-#### Script 3 
+#### [mitochondria.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/mitochondria.sh) <a name="mitochondria"></a>
 
 Script to obtain mitochondrial sequences and run alignment with MAFFT. Code for run in IQTree after manual curation. 
 
@@ -72,7 +72,7 @@ Script to obtain mitochondrial sequences and run alignment with MAFFT. Code for 
 - Run IQtree phylogenetic estimates 
 
 
-#### Script 4 
+#### [windows_phylo_d.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/windows_phylo_d.sh) <a name="windows"></a>
 
 Script for analyses in genomic windows.
 
@@ -81,7 +81,7 @@ Script for analyses in genomic windows.
 - Run IQtree phylogenetic estimates
 - Run Dsuite estimates
 
-#### Script 5
+#### [filtering_snps.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/filtering_snps.sh) <a name="filtering_snps"></a>
 
 Script to run ASTRAL, TWISST, and GCF distance checks 
 
