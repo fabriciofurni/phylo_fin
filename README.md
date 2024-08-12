@@ -5,7 +5,7 @@
 ## Scripts used on Furni et. al. (2024). Phylogenomics and pervasive genome-wide phylogenetic discordance among fin whales (_Balaenoptera physalus_)   
 
 
-## [alignment_calling.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/alignment_calling.sh) <a name="alignment_calling"></a>
+#### [alignment_calling.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/alignment_calling.sh) <a name="alignment_calling"></a>
 
 
 #### Raw reads alignment steps 
