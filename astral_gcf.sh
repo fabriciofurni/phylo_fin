@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Run this script for each dataset (autosomal, X, and Y chromosome)
+
+
 for window in 1mb 100k 50k
 
 do
@@ -26,3 +29,5 @@ iqtree2 --gcf ${window}_trees.txt -t ${outputfolder}/auto/${window}_auto.min4.ph
 ### mitochondrial mitochondrial tree
 
 iqtree2 --gcf ${window}_trees.txt -t ${outputfolder}/mitochondrial/${window}_all_final_aligned.treefile 
+
+done
