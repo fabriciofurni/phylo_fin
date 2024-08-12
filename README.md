@@ -86,7 +86,7 @@ Script for analyses in genomic windows.
 Script to run ASTRAL and GCF concordance checks per windows
 
 - Run Astral per window
-- Run GCF distant per window
+- Run GCF discordance per window
   
 
 
