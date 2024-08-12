@@ -3,28 +3,28 @@
 module load HTSlib
 module load BCFtools
 
+
 ## autosomal 
 
-iqtree2 -s chromX.min4.phy -m GTR+G -nt 28 -B 1000 -o $outgroup
+vcf2phylip.py -i ${outputfolder}/vcfs/${proj}_snps_auto_filtered.vcf.gz -o $outgroup --output-prefix auto
+
+module load IQ-TREE/2.2.2.3-gompi-2022a
+
+iqtree2 -s auto.min4.phy -m GTR+G -nt 28 -B 100 -o $outgroup
 
 
 ## X chromosome 
 
-bcftools view -e F_MISSING>0.2 -Oz -r CM020962.1 > chrom_x_clean.vcf.gz
-
-../../softwares/vcf2phylip.py -i chrom_x_clean.vcf.gz -o $outgroup --output-prefix chrom_x
+vcf2phylip.py -i ${outputfolder}/vcfs/${proj}_X_chrom_snps_filtered.vcf.gz -o $outgroup --output-prefix chrom_x
 
 module load IQ-TREE/2.2.2.3-gompi-2022a
 
 iqtree2 -s chromX.min4.phy -m GTR+G -nt 28 -B 1000 -o $outgroup
 
 
-
 ## Y chromosome 
 
-bcftools view -S males -e F_MISSING>0.2 -Oz -r CM020963.1 > chrom_y_clean.vcf.gz
-
-../../softwares/vcf2phylip.py -i chrom_y_clean.vcf.gz -o $outgroup --output-prefix chrom_y
+vcf2phylip.py -i  ${outputfolder}/vcfs/${proj}_Y_chrom_snps_filtered.vcf.gz -o $outgroup --output-prefix chrom_y
 
 module load IQ-TREE/2.2.2.3-gompi-2022a
 
