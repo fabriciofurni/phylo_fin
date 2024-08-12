@@ -62,9 +62,9 @@ rm *${chr}_${end}.min4.phy*
 
 rm ${chr}_${end}.vcf.gz
 
-
 EOF
 
 done
+
 
 
