@@ -68,7 +68,7 @@ Script to run concatenated autosomal, sex-chromosome phylogenetic estimates
 Script to obtain mitochondrial sequences and run alignment with MAFFT. Code for run in IQTree after manual curation. 
 
 - Get mitochondrial sequences from BAM files using ANGSD
-- Align sequences with MAFFFT
+- Align sequences with MAFFT
 - Run IQtree phylogenetic estimates 
 
 
@@ -83,7 +83,7 @@ Script for analyses in genomic windows.
 
 #### [astral_gcf.sh](https://github.com/fabriciofurni/phylo_fin/blob/main/astral_gcf.sh) <a name="astral_gcf"></a>
 
-Script to run ASTRAL and GCF distance checks per windows
+Script to run ASTRAL and GCF concordance checks per windows
 
 - Run Astral per window
 - Run GCF distant per window
