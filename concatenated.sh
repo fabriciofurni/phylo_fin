@@ -10,7 +10,7 @@ vcf2phylip.py -i ${outputfolder}/vcfs/${proj}_snps_auto_filtered.vcf.gz -o $outg
 
 module load IQ-TREE/2.2.2.3-gompi-2022a
 
-iqtree2 -s auto.min4.phy -m GTR+G -nt 28 -B 100 -o $outgroup
+iqtree2 -s auto.min4.phy -m GTR+G -nt 28 -B 1000 -o $outgroup
 
 
 ## X chromosome 
