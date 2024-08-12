@@ -82,14 +82,13 @@ Script for analyses in genomic windows.
 
 ## Script 5
 
-Script to run ASTRAL and GCF distance checks 
+Script to run ASTRAL, TWISST, and GCF distance checks 
 
-
+- Run Astral per window
+- Run GCF distant per window
+- Run Twisst for 100k 
   
 
-
-
-- 
 
 
  
